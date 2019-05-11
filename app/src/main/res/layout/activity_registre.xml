@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_padre_registre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <ImageView
+            android:id="@+id/img_logo_registre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/desc_img_logo"
+            android:src="@drawable/img_logo" />
+
+        <LinearLayout
+            android:id="@+id/ly_datos_registre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#40C42152"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_user_registre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_user_registre"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img_user_login"
+                    android:src="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/et_user_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints=""
+                    android:background="#00000000"
+                    android:hint="@string/hint_user_login"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_surname_registre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_surname_registre"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img_surname_login"
+                    android:src="@drawable/mobile" />
+
+                <EditText
+                    android:id="@+id/et_surname_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints=""
+                    android:background="#00000000"
+                    android:hint="@string/hint_surname"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_mail_registre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_mail_registre"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img_mail1_login"
+                    android:src="@drawable/email" />
+
+                <EditText
+                    android:id="@+id/et_mail_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints=""
+                    android:background="#00000000"
+                    android:hint="@string/hint_mail"
+                    android:inputType="textWebEmailAddress"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_pass_registre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_pass_registre"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img_pass_login"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/et_pass_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints=""
+                    android:background="#00000000"
+                    android:hint="@string/hint_pass_login"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_type_registre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_type_registre"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/img_pass_login"
+                    android:src="@drawable/password" />
+
+                <EditText
+                    android:id="@+id/et_type_registre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:autofillHints=""
+                    android:background="#00000000"
+                    android:hint="@string/hint_type"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16sp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly3_registre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/btn_singup"
+                android:textColor="#40C421" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
